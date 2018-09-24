@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">Who\'s A Good Dog</string>
+
+    <string name="username">Username</string>
+    <string name="log_in">Log in</string>
+    <string name="logged_is_as">Logged in as %s</string>
+
+    <string name="title_home">Home</string>
+    <string name="hello_nice_to_see_you">Hello! nice to see you!</string>
+
+    <string name="title_my_dog">My Dog</string>
+    <string name="dog">Dog</string>
+    <string name="thats_not_my_dog">That\'s Not My Dog!</string>
+
+    <string name="error_field_required">This field is required</string>
+    <string name="error_service_unavailable">Service currently unavailable, try again!</string>
+    <string name="error_no_connection">No Internet Connection</string>
+    <string name="error_default">An unknown error occurred</string>
+</resources>
