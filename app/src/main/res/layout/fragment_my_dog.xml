@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_dark_transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.toolslab.gooddog.view.mydog.MyDogFragment">
+
+    <TextView
+        android:id="@+id/fragment_my_dog_breed_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_small"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_large"
+        tools:text="A breed" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/fragment_my_dog_image"
+        android:layout_width="@dimen/view_size_huge"
+        android:layout_height="@dimen/view_size_huge"
+        android:layout_weight="1"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/ic_pets_black_24dp"
+        tools:background="@color/grey"
+        tools:foreground="@drawable/ic_pets_black_24dp" />
+
+    <Button
+        android:id="@+id/fragment_my_dog_thats_not_my_dog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_size_large"
+        android:layout_margin="@dimen/spacing_small"
+        android:text="@string/thats_not_my_dog"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</LinearLayout>
