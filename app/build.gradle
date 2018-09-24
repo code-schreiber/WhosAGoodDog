@@ -25,6 +25,7 @@ dependencies {
     implementation Dependencies.kotlin
 
     implementation Dependencies.appCompat
+    implementation Dependencies.design
 
     implementation Dependencies.timber
     implementation Dependencies.butterknife

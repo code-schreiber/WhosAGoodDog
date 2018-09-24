@@ -3,6 +3,7 @@ package com.toolslab.gooddog.view.nav
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
+import com.toolslab.gooddog.R
 import com.toolslab.gooddog.view.base.BaseActivity
 import com.toolslab.gooddog.view.home.HomeFragment
 import com.toolslab.gooddog.view.mydog.MyDogFragment
