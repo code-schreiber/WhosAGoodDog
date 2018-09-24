@@ -11,6 +11,7 @@ import butterknife.BindView
 import butterknife.ButterKnife
 import butterknife.OnClick
 import butterknife.OnEditorAction
+import com.toolslab.gooddog.R
 import com.toolslab.gooddog.view.base.BaseActivity
 import com.toolslab.gooddog.view.nav.MainActivity
 import javax.inject.Inject
