@@ -9,6 +9,7 @@ import butterknife.BindView
 import butterknife.ButterKnife
 import butterknife.OnClick
 import com.facebook.drawee.view.SimpleDraweeView
+import com.toolslab.gooddog.R
 import com.toolslab.gooddog.view.base.BaseFragment
 import javax.inject.Inject
 
