@@ -9,18 +9,18 @@ import javax.inject.Inject
 class DogImageRepository @Inject constructor() {
 
     @Inject
-    internal lateinit var coworkingMapApi: ApiService
+    internal lateinit var apiService: ApiService
 
     @Inject
     internal lateinit var errorHandler: ErrorHandler
 
     fun randomDogImage(): Single<DogImage> {
         lateinit var breed: String
-        return coworkingMapApi.listAllBreeds()
+        return apiService.listAllBreeds()
                 .flatMap {
                     val breeds = it.message.keys.toList()
                     breed = breeds.random()
-                    coworkingMapApi.randomImageOfBreed(breed)
+                    apiService.randomImageOfBreed(breed)
                 }
                 .onErrorResumeNext {
                     errorHandler.handle(it)
