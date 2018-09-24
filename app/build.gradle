@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    defaultConfig {
+        minSdkVersion Versions.minSdkVersion
+        targetSdkVersion Versions.targetSdkVersion
+        compileSdkVersion Versions.compileSdkVersion
+        versionCode Versions.versionCode
+        versionName Versions.versionName
+        resConfigs "en"
+    }
+
+    lintOptions {
+        abortOnError true
+    }
+}
+
+dependencies {
+    implementation project(Projects.baseMvp)
+    implementation project(Projects.baseRepository)
+
+    implementation Dependencies.kotlin
+
+    implementation Dependencies.appCompat
+
+    implementation Dependencies.timber
+    implementation Dependencies.butterknife
+    kapt Dependencies.butterknifeCompiler
+
+    kapt Dependencies.daggerCompiler
+    implementation Dependencies.daggerAndroid
+    kapt Dependencies.daggerAndroidProcessor
+    implementation Dependencies.daggerAndroidSupport
+
+    implementation Dependencies.rxAndroid
+
+    implementation Dependencies.fresco
+
+    // Tests
+    testImplementation Dependencies.mockitoKotlin
+    testImplementation Dependencies.kluent
+}

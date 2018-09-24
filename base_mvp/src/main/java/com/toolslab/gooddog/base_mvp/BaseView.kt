@@ -4,4 +4,6 @@ interface BaseView : MvpView {
     fun showNoConnectionError()
 
     fun showDefaultError()
+
+    fun showMessage(message: String)
 }
